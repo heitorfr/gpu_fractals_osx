@@ -1,0 +1,23 @@
+***************
+*** 42,48 ****
+         glCompileShaderARB(sdr);
+         glGetObjectParameterivARB(sdr, GL_OBJECT_COMPILE_STATUS_ARB, &success);
+         if(!success) {
+-                fprintf(stderr, "shader compilation failed\n");
+                 return 0;
+         }
+  
+--- 42,54 ----
+         glCompileShaderARB(sdr);
+         glGetObjectParameterivARB(sdr, GL_OBJECT_COMPILE_STATUS_ARB, &success);
+         if(!success) {
++                int infologLength = 0;
++                glGetObjectParameterivARB(sdr, GL_OBJECT_INFO_LOG_LENGTH_ARB, &infologLength);
++                if (infologLength > 0) {
++                    char *infolog = malloc(infologLength);
++                    glGetInfoLogARB(sdr, infologLength, NULL, infolog);
++                    fprintf(stderr, "shader compilation failed: %s\n", infolog);
++                }
+                 return 0;
+         }
+  

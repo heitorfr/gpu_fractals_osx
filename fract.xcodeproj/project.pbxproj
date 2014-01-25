@@ -7,34 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC235CF81893FC4000CC0263 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235CF71893FC4000CC0263 /* main.c */; };
-		EC235CFA1893FC4000CC0263 /* fract.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235CF91893FC4000CC0263 /* fract.1 */; };
+		EC235D181893FEBE00CC0263 /* mbrot.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D031893FC8600CC0263 /* mbrot.c */; };
+		EC235D191893FEBE00CC0263 /* sdr.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D061893FC8600CC0263 /* sdr.c */; };
+		EC235D1B1893FEBE00CC0263 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D091893FC8600CC0263 /* timer.c */; };
+		EC235D1C1893FEBE00CC0263 /* image_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D001893FC8600CC0263 /* image_ppm.c */; };
+		EC235D1E1893FEBE00CC0263 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D141893FE4B00CC0263 /* CoreServices.framework */; };
+		EC235D1F1893FEBE00CC0263 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D121893FDFA00CC0263 /* OpenGL.framework */; };
+		EC235D201893FEBE00CC0263 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D101893FCCD00CC0263 /* GLUT.framework */; };
+		EC235D221893FEBE00CC0263 /* fract.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235CF91893FC4000CC0263 /* fract.1 */; };
+		EC235D29189400CD00CC0263 /* pal.ppm in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235D051893FC8600CC0263 /* pal.ppm */; };
+		EC235D2A1894013400CC0263 /* mbrot.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235D041893FC8600CC0263 /* mbrot.glsl */; };
+		EC235D2E1894018900CC0263 /* sdr.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D061893FC8600CC0263 /* sdr.c */; };
+		EC235D2F1894018900CC0263 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D091893FC8600CC0263 /* timer.c */; };
+		EC235D301894018900CC0263 /* image_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D001893FC8600CC0263 /* image_ppm.c */; };
+		EC235D321894018900CC0263 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D141893FE4B00CC0263 /* CoreServices.framework */; };
+		EC235D331894018900CC0263 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D121893FDFA00CC0263 /* OpenGL.framework */; };
+		EC235D341894018900CC0263 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D101893FCCD00CC0263 /* GLUT.framework */; };
+		EC235D361894018900CC0263 /* fract.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235CF91893FC4000CC0263 /* fract.1 */; };
+		EC235D391894018900CC0263 /* pal.ppm in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235D051893FC8600CC0263 /* pal.ppm */; };
+		EC235D3E189401A500CC0263 /* julia.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D011893FC8600CC0263 /* julia.c */; };
+		EC235D3F189401CB00CC0263 /* julia.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235D021893FC8600CC0263 /* julia.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EC235CF21893FC4000CC0263 /* CopyFiles */ = {
+		EC235D211893FEBE00CC0263 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
-				EC235CFA1893FC4000CC0263 /* fract.1 in CopyFiles */,
+				EC235D221893FEBE00CC0263 /* fract.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC235D28189400BD00CC0263 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				EC235D2A1894013400CC0263 /* mbrot.glsl in CopyFiles */,
+				EC235D29189400CD00CC0263 /* pal.ppm in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC235D351894018900CC0263 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+				EC235D361894018900CC0263 /* fract.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EC235D371894018900CC0263 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				EC235D3F189401CB00CC0263 /* julia.glsl in CopyFiles */,
+				EC235D391894018900CC0263 /* pal.ppm in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EC235CF41893FC4000CC0263 /* fract */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fract; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC235CF71893FC4000CC0263 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		EC235CF91893FC4000CC0263 /* fract.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = fract.1; sourceTree = "<group>"; };
+		EC235D001893FC8600CC0263 /* image_ppm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_ppm.c; sourceTree = "<group>"; };
+		EC235D011893FC8600CC0263 /* julia.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = julia.c; sourceTree = "<group>"; };
+		EC235D021893FC8600CC0263 /* julia.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = julia.glsl; sourceTree = "<group>"; };
+		EC235D031893FC8600CC0263 /* mbrot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mbrot.c; sourceTree = "<group>"; };
+		EC235D041893FC8600CC0263 /* mbrot.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mbrot.glsl; sourceTree = "<group>"; };
+		EC235D051893FC8600CC0263 /* pal.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; path = pal.ppm; sourceTree = "<group>"; };
+		EC235D061893FC8600CC0263 /* sdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sdr.c; sourceTree = "<group>"; };
+		EC235D071893FC8600CC0263 /* sdr.c.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdr.c.orig; sourceTree = "<group>"; };
+		EC235D081893FC8600CC0263 /* sdr.c.rej */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdr.c.rej; sourceTree = "<group>"; };
+		EC235D091893FC8600CC0263 /* timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timer.c; sourceTree = "<group>"; };
+		EC235D0A1893FC8600CC0263 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		EC235D101893FCCD00CC0263 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		EC235D121893FDFA00CC0263 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EC235D141893FE4B00CC0263 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		EC235D261893FEBE00CC0263 /* mbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mbrot; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC235D3D1894018900CC0263 /* julia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = julia; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC235CF11893FC4000CC0263 /* Frameworks */ = {
+		EC235D1D1893FEBE00CC0263 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC235D1E1893FEBE00CC0263 /* CoreServices.framework in Frameworks */,
+				EC235D1F1893FEBE00CC0263 /* OpenGL.framework in Frameworks */,
+				EC235D201893FEBE00CC0263 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC235D311894018900CC0263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC235D321894018900CC0263 /* CoreServices.framework in Frameworks */,
+				EC235D331894018900CC0263 /* OpenGL.framework in Frameworks */,
+				EC235D341894018900CC0263 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +121,9 @@
 		EC235CEB1893FC4000CC0263 = {
 			isa = PBXGroup;
 			children = (
+				EC235D141893FE4B00CC0263 /* CoreServices.framework */,
+				EC235D121893FDFA00CC0263 /* OpenGL.framework */,
+				EC235D101893FCCD00CC0263 /* GLUT.framework */,
 				EC235CF61893FC4000CC0263 /* fract */,
 				EC235CF51893FC4000CC0263 /* Products */,
 			);
@@ -52,7 +132,8 @@
 		EC235CF51893FC4000CC0263 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC235CF41893FC4000CC0263 /* fract */,
+				EC235D261893FEBE00CC0263 /* mbrot */,
+				EC235D3D1894018900CC0263 /* julia */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +141,17 @@
 		EC235CF61893FC4000CC0263 /* fract */ = {
 			isa = PBXGroup;
 			children = (
-				EC235CF71893FC4000CC0263 /* main.c */,
+				EC235D001893FC8600CC0263 /* image_ppm.c */,
+				EC235D011893FC8600CC0263 /* julia.c */,
+				EC235D021893FC8600CC0263 /* julia.glsl */,
+				EC235D031893FC8600CC0263 /* mbrot.c */,
+				EC235D041893FC8600CC0263 /* mbrot.glsl */,
+				EC235D051893FC8600CC0263 /* pal.ppm */,
+				EC235D061893FC8600CC0263 /* sdr.c */,
+				EC235D071893FC8600CC0263 /* sdr.c.orig */,
+				EC235D081893FC8600CC0263 /* sdr.c.rej */,
+				EC235D091893FC8600CC0263 /* timer.c */,
+				EC235D0A1893FC8600CC0263 /* util.h */,
 				EC235CF91893FC4000CC0263 /* fract.1 */,
 			);
 			path = fract;
@@ -69,21 +160,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC235CF31893FC4000CC0263 /* fract */ = {
+		EC235D161893FEBE00CC0263 /* mbrot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC235CFD1893FC4000CC0263 /* Build configuration list for PBXNativeTarget "fract" */;
+			buildConfigurationList = EC235D231893FEBE00CC0263 /* Build configuration list for PBXNativeTarget "mbrot" */;
 			buildPhases = (
-				EC235CF01893FC4000CC0263 /* Sources */,
-				EC235CF11893FC4000CC0263 /* Frameworks */,
-				EC235CF21893FC4000CC0263 /* CopyFiles */,
+				EC235D171893FEBE00CC0263 /* Sources */,
+				EC235D1D1893FEBE00CC0263 /* Frameworks */,
+				EC235D211893FEBE00CC0263 /* CopyFiles */,
+				EC235D28189400BD00CC0263 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = fract;
+			name = mbrot;
 			productName = fract;
-			productReference = EC235CF41893FC4000CC0263 /* fract */;
+			productReference = EC235D261893FEBE00CC0263 /* mbrot */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC235D2B1894018900CC0263 /* julia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC235D3A1894018900CC0263 /* Build configuration list for PBXNativeTarget "julia" */;
+			buildPhases = (
+				EC235D2C1894018900CC0263 /* Sources */,
+				EC235D311894018900CC0263 /* Frameworks */,
+				EC235D351894018900CC0263 /* CopyFiles */,
+				EC235D371894018900CC0263 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = julia;
+			productName = fract;
+			productReference = EC235D3D1894018900CC0263 /* julia */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -107,17 +217,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC235CF31893FC4000CC0263 /* fract */,
+				EC235D161893FEBE00CC0263 /* mbrot */,
+				EC235D2B1894018900CC0263 /* julia */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC235CF01893FC4000CC0263 /* Sources */ = {
+		EC235D171893FEBE00CC0263 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC235CF81893FC4000CC0263 /* main.c in Sources */,
+				EC235D181893FEBE00CC0263 /* mbrot.c in Sources */,
+				EC235D191893FEBE00CC0263 /* sdr.c in Sources */,
+				EC235D1B1893FEBE00CC0263 /* timer.c in Sources */,
+				EC235D1C1893FEBE00CC0263 /* image_ppm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC235D2C1894018900CC0263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC235D2E1894018900CC0263 /* sdr.c in Sources */,
+				EC235D3E189401A500CC0263 /* julia.c in Sources */,
+				EC235D2F1894018900CC0263 /* timer.c in Sources */,
+				EC235D301894018900CC0263 /* image_ppm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,17 +317,31 @@
 			};
 			name = Release;
 		};
-		EC235CFE1893FC4000CC0263 /* Debug */ = {
+		EC235D241893FEBE00CC0263 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mbrot;
 			};
 			name = Debug;
 		};
-		EC235CFF1893FC4000CC0263 /* Release */ = {
+		EC235D251893FEBE00CC0263 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mbrot;
+			};
+			name = Release;
+		};
+		EC235D3B1894018900CC0263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = julia;
+			};
+			name = Debug;
+		};
+		EC235D3C1894018900CC0263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = julia;
 			};
 			name = Release;
 		};
@@ -218,13 +357,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC235CFD1893FC4000CC0263 /* Build configuration list for PBXNativeTarget "fract" */ = {
+		EC235D231893FEBE00CC0263 /* Build configuration list for PBXNativeTarget "mbrot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC235CFE1893FC4000CC0263 /* Debug */,
-				EC235CFF1893FC4000CC0263 /* Release */,
+				EC235D241893FEBE00CC0263 /* Debug */,
+				EC235D251893FEBE00CC0263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC235D3A1894018900CC0263 /* Build configuration list for PBXNativeTarget "julia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC235D3B1894018900CC0263 /* Debug */,
+				EC235D3C1894018900CC0263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
