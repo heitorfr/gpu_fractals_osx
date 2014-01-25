@@ -18,9 +18,10 @@ void glUniform1i(GLint location, GLint v0);
 void glUniform2f(GLint location, GLfloat v0, GLfloat v1);
 #endif
 
-unsigned int setup_shader(const char *fname) {
+GLhandleARB setup_shader(const char *fname) {
 	FILE *fp;
-	unsigned int prog, sdr, len;
+	long len;
+    GLhandleARB sdr,prog;
 	char *src_buf;
 	int success, linked;
 
@@ -74,21 +75,21 @@ unsigned int setup_shader(const char *fname) {
 	return prog;
 }
 
-void set_uniform1f(unsigned int prog, const char *name, float val) {
+void set_uniform1f(GLhandleARB prog, const char *name, float val) {
 	int loc = glGetUniformLocationARB(prog, name);
 	if(loc != -1) {
 		glUniform1f(loc, val);
 	}
 }
 
-void set_uniform2f(unsigned int prog, const char *name, float v1, float v2) {
+void set_uniform2f(GLhandleARB prog, const char *name, float v1, float v2) {
 	int loc = glGetUniformLocationARB(prog, name);
 	if(loc != -1) {
 		glUniform2f(loc, v1, v2);
 	}
 }
 
-void set_uniform1i(unsigned int prog, const char *name, int val) {
+void set_uniform1i(GLhandleARB prog, const char *name, int val) {
 	int loc = glGetUniformLocationARB(prog, name);
 	if(loc != -1) {
 		glUniform1i(loc, val);
