@@ -1,4 +1,4 @@
-#if defined(__unix__) || defined(unix)
+#if defined(__unix__) || defined(unix) || defined(__MACH__)
 #include <time.h>
 #include <sys/time.h>
 #else	/* assume win32 */
@@ -7,7 +7,7 @@
 
 
 unsigned long get_msec(void) {
-#if defined(__unix__) || defined(unix)
+#if defined(__unix__) || defined(unix) || defined(__MACH__)
 	static struct timeval timeval, first_timeval;
 	
 	gettimeofday(&timeval, 0);
@@ -19,5 +19,5 @@ unsigned long get_msec(void) {
 	return (timeval.tv_sec - first_timeval.tv_sec) * 1000 + (timeval.tv_usec - first_timeval.tv_usec) / 1000;
 #else
 	return GetTickCount();
-#endif	/* __unix__ */
+#endif	/* __unix__  */
 }

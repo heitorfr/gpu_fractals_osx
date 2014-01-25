@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <GL/gl.h>
+#include <GLUT/glut.h>
 
 #ifdef __unix__
 GLhandleARB glCreateShaderObjectARB(GLenum);

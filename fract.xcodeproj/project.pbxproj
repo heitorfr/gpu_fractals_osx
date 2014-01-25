@@ -11,7 +11,6 @@
 		EC235D191893FEBE00CC0263 /* sdr.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D061893FC8600CC0263 /* sdr.c */; };
 		EC235D1B1893FEBE00CC0263 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D091893FC8600CC0263 /* timer.c */; };
 		EC235D1C1893FEBE00CC0263 /* image_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D001893FC8600CC0263 /* image_ppm.c */; };
-		EC235D1E1893FEBE00CC0263 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D141893FE4B00CC0263 /* CoreServices.framework */; };
 		EC235D1F1893FEBE00CC0263 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D121893FDFA00CC0263 /* OpenGL.framework */; };
 		EC235D201893FEBE00CC0263 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D101893FCCD00CC0263 /* GLUT.framework */; };
 		EC235D221893FEBE00CC0263 /* fract.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235CF91893FC4000CC0263 /* fract.1 */; };
@@ -20,7 +19,6 @@
 		EC235D2E1894018900CC0263 /* sdr.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D061893FC8600CC0263 /* sdr.c */; };
 		EC235D2F1894018900CC0263 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D091893FC8600CC0263 /* timer.c */; };
 		EC235D301894018900CC0263 /* image_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EC235D001893FC8600CC0263 /* image_ppm.c */; };
-		EC235D321894018900CC0263 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D141893FE4B00CC0263 /* CoreServices.framework */; };
 		EC235D331894018900CC0263 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D121893FDFA00CC0263 /* OpenGL.framework */; };
 		EC235D341894018900CC0263 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC235D101893FCCD00CC0263 /* GLUT.framework */; };
 		EC235D361894018900CC0263 /* fract.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC235CF91893FC4000CC0263 /* fract.1 */; };
@@ -89,7 +87,6 @@
 		EC235D0A1893FC8600CC0263 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		EC235D101893FCCD00CC0263 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		EC235D121893FDFA00CC0263 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		EC235D141893FE4B00CC0263 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		EC235D261893FEBE00CC0263 /* mbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mbrot; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC235D3D1894018900CC0263 /* julia */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = julia; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC235D1E1893FEBE00CC0263 /* CoreServices.framework in Frameworks */,
 				EC235D1F1893FEBE00CC0263 /* OpenGL.framework in Frameworks */,
 				EC235D201893FEBE00CC0263 /* GLUT.framework in Frameworks */,
 			);
@@ -109,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC235D321894018900CC0263 /* CoreServices.framework in Frameworks */,
 				EC235D331894018900CC0263 /* OpenGL.framework in Frameworks */,
 				EC235D341894018900CC0263 /* GLUT.framework in Frameworks */,
 			);
@@ -121,7 +116,6 @@
 		EC235CEB1893FC4000CC0263 = {
 			isa = PBXGroup;
 			children = (
-				EC235D141893FE4B00CC0263 /* CoreServices.framework */,
 				EC235D121893FDFA00CC0263 /* OpenGL.framework */,
 				EC235D101893FCCD00CC0263 /* GLUT.framework */,
 				EC235CF61893FC4000CC0263 /* fract */,
